@@ -13,7 +13,7 @@
             <objects>
                 <navigationController id="yeW-dK-sxO" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HXc-DE-KNq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -29,38 +29,38 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TaskDetailViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LUn-vh-97M">
-                                <rect key="frame" x="16" y="76" width="382" height="712"/>
+                                <rect key="frame" x="16" y="160" width="382" height="633"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Diw-t4-Ffm">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="33.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCb-qD-gAG">
-                                                <rect key="frame" x="0.0" y="0.0" width="79" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="33.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNs-Yi-sYq">
-                                                <rect key="frame" x="87" y="0.0" width="295" height="34"/>
+                                                <rect key="frame" x="87" y="0.0" width="295" height="33.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulu-jI-iUE">
-                                        <rect key="frame" x="0.0" y="42" width="382" height="33.5"/>
+                                        <rect key="frame" x="0.0" y="41.5" width="382" height="33.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wmv-lN-7OL">
-                                        <rect key="frame" x="0.0" y="83.5" width="382" height="628.5"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wmv-lN-7OL" userLabel="Notes Text View">
+                                        <rect key="frame" x="0.0" y="83" width="382" height="550"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -78,6 +78,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="g2a-JC-r8o"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="vNs-Yi-sYq" id="ie9-Gu-nHf"/>
+                        <outlet property="notesTextView" destination="wmv-lN-7OL" id="FHx-3f-Ulw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,13 +90,13 @@
         <!--Tasks-->
         <scene sceneID="CDc-up-NkS">
             <objects>
-                <tableViewController id="ipJ-dt-cNR" sceneMemberID="viewController">
+                <tableViewController id="ipJ-dt-cNR" customClass="TasksTableViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6la-XW-Xav">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="x9I-om-6np" style="IBUITableViewCellStyleDefault" id="1m4-b5-fpf">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TaskCell" textLabel="x9I-om-6np" style="IBUITableViewCellStyleDefault" id="1m4-b5-fpf">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1m4-b5-fpf" id="3of-en-ACB">
@@ -122,7 +126,7 @@
                     <navigationItem key="navigationItem" title="Tasks" id="Vqr-6J-LBu">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Rcv-Oh-hZr">
                             <connections>
-                                <segue destination="yeW-dK-sxO" kind="presentation" identifier="NewTaskModalSegue" id="h1r-cQ-Kg7"/>
+                                <segue destination="yeW-dK-sxO" kind="presentation" identifier="NewTaskModalSegue" modalPresentationStyle="fullScreen" id="h1r-cQ-Kg7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -150,6 +154,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qcr-Y7-Jk1"/>
+        <segue reference="JR5-SF-i27"/>
     </inferredMetricsTieBreakers>
 </document>

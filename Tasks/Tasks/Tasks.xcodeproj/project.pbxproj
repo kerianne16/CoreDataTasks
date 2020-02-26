@@ -17,6 +17,7 @@
 		5515C7A724044675006B210C /* Tasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7A524044675006B210C /* Tasks.xcdatamodeld */; };
 		5515C7A9240449B8006B210C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7A8240449B8006B210C /* CoreDataStack.swift */; };
 		5515C7AB240451E7006B210C /* Task+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7AA240451E7006B210C /* Task+Convenience.swift */; };
+		5515C7E324059B01006B210C /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7E224059B01006B210C /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		5515C7A624044675006B210C /* Tasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasks.xcdatamodel; sourceTree = "<group>"; };
 		5515C7A8240449B8006B210C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		5515C7AA240451E7006B210C /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
+		5515C7E1240592AA006B210C /* Tasks 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Tasks 2.xcdatamodel"; sourceTree = "<group>"; };
+		5515C7E224059B01006B210C /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +67,44 @@
 		5515C78E2404393D006B210C /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				5515C78F2404393D006B210C /* AppDelegate.swift */,
-				5515C7912404393D006B210C /* SceneDelegate.swift */,
-				5515C7932404393D006B210C /* TaskDetailViewController.swift */,
-				5515C7AA240451E7006B210C /* Task+Convenience.swift */,
-				5515C7952404393D006B210C /* Main.storyboard */,
-				5515C7A324044410006B210C /* TasksTableViewController.swift */,
-				5515C7A8240449B8006B210C /* CoreDataStack.swift */,
-				5515C7A524044675006B210C /* Tasks.xcdatamodeld */,
+				5515C7E024059127006B210C /* Application */,
+				5515C7DD240590B7006B210C /* View Controllers */,
+				5515C7DF2405910D006B210C /* Models */,
 				5515C79824043948006B210C /* Assets.xcassets */,
-				5515C79A24043948006B210C /* LaunchScreen.storyboard */,
 				5515C79D24043948006B210C /* Info.plist */,
+				5515C7952404393D006B210C /* Main.storyboard */,
+				5515C7E224059B01006B210C /* TaskCell.swift */,
+				5515C79A24043948006B210C /* LaunchScreen.storyboard */,
 			);
 			path = Tasks;
+			sourceTree = "<group>";
+		};
+		5515C7DD240590B7006B210C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5515C7932404393D006B210C /* TaskDetailViewController.swift */,
+				5515C7A324044410006B210C /* TasksTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5515C7DF2405910D006B210C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5515C7AA240451E7006B210C /* Task+Convenience.swift */,
+				5515C7A8240449B8006B210C /* CoreDataStack.swift */,
+				5515C7A524044675006B210C /* Tasks.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5515C7E024059127006B210C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5515C78F2404393D006B210C /* AppDelegate.swift */,
+				5515C7912404393D006B210C /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +182,7 @@
 				5515C7902404393D006B210C /* AppDelegate.swift in Sources */,
 				5515C7A724044675006B210C /* Tasks.xcdatamodeld in Sources */,
 				5515C7AB240451E7006B210C /* Task+Convenience.swift in Sources */,
+				5515C7E324059B01006B210C /* TaskCell.swift in Sources */,
 				5515C7A9240449B8006B210C /* CoreDataStack.swift in Sources */,
 				5515C7A424044410006B210C /* TasksTableViewController.swift in Sources */,
 				5515C7922404393D006B210C /* SceneDelegate.swift in Sources */,
@@ -357,9 +386,10 @@
 		5515C7A524044675006B210C /* Tasks.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				5515C7E1240592AA006B210C /* Tasks 2.xcdatamodel */,
 				5515C7A624044675006B210C /* Tasks.xcdatamodel */,
 			);
-			currentVersion = 5515C7A624044675006B210C /* Tasks.xcdatamodel */;
+			currentVersion = 5515C7E1240592AA006B210C /* Tasks 2.xcdatamodel */;
 			path = Tasks.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
